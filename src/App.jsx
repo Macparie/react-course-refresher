@@ -1,20 +1,12 @@
 import {CORE_CONCEPTS} from './data.js'
 import Header from './components/Header.jsx';
+import CoreConcept from './components/CoreConcept.jsx';
+import TabButton from './components/TabButton.jsx';
 
 
 
 
-function CoreConcept ({image, title, description}) {
-  return(
-    <div>
-      <li>
-      <img src={image} alt={title} />
-    <h3>{title}</h3>
-    <p>{description}</p>
-    </li>
-    </div>
-  );
-}
+
 function App() {
   return (
     <div>
@@ -32,8 +24,19 @@ function App() {
           <CoreConcept {...CORE_CONCEPTS[1]}/>
           <CoreConcept {...CORE_CONCEPTS[2]}/>
           <CoreConcept {...CORE_CONCEPTS[3]}/>
-          <CoreConcept {...CORE_CONCEPTS[2]}/>
+        
           </ul>
+        </section>
+        <section id="examples" >
+
+        <h2>ExMPLES</h2>
+          <menu>
+          <TabButton>Macparie</TabButton>
+            <TabButton>Iremide</TabButton>
+            <TabButton>Jemie</TabButton>
+          </menu>
+          
+           
         </section>
       </main>
     </div>
